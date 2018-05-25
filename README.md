@@ -9,12 +9,13 @@ Make sure maven is installed:
 
     brew install maven
 or
+
     apt install maven
 
 
-Then check that ~/.m2/settings.xml exists and add a `server` entry for Clojars containing your account username and password.
+Then check that `~/.m2/settings.xml` exists and add a `server` entry for `clojars` containing your account username and password.
 
-Example:
+Example `settings.xml`:
 ```xml
 <settings>
   <servers>
