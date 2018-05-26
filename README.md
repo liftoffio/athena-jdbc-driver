@@ -3,7 +3,11 @@
 Amazon only provides the Athena JDBC driver as a `.jar`. We reupload it to Clojars for ease of use.
 
 ## Deploying
-    ./deploy.sh
+    mvn deploy:deploy-file \
+        -DpomFile=pom.xml \
+        -Dfile=AthenaJDBC42_2.0.2.jar \
+        -DrepositoryId=clojars \
+        -Durl=https://clojars.org/repo
 
 Make sure maven is installed:
 
